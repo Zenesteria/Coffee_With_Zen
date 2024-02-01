@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex__wrapper">
+        <div class="habit__progress__wrapper">
+          <div class="habit__progress__display">
+            <h1 id="habit__progress__value"></h1>
+          </div>
+          <h3>Habit progress</h3>
+        </div>
+
+        <form id="habit__form" action="">
+          <label for="name"> Name </label>
+          <input required id="name" name="name" type="text" />
+          <label for="goal"> Goal </label>
+          <div class="flex__wrapper">
+            <select id="goal" name="goal" default="1">
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+            </select>
+            <h3>Repetitions Daily</h3>
+          </div>
+          <div class="flex__wrapper justify__between">
+            <div>
+              <label for="time"> Time of day </label>
+              <input required id="time" name="time" type="time" />
+            </div>
+
+            <div>
+              <label for="start__date"> Start Date </label>
+              <input required id="start__date" name="start__date" type="date" />
+            </div>
+          </div>
+          <button type="submit">Add habit</button>
+        </form>
+
+
+      </div>
+
+      <h1 class="section__header">
+        Habits
+      </h1>
+
+      <div class="habits__wrapper" id="habits__wrapper">
+          <!--
+            Habits Here
+           -->
+      </div>
+
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
