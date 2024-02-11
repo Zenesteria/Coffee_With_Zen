@@ -1,0 +1,258 @@
+:root {
+  --main: #e5af50;
+  --secondary: #f8ebd7;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.flex__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: fit-content;
+  padding: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+
+.hero .bg {
+  background: url("/Assets/images/Backdrop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero p {
+  font-weight: 300;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  max-width: 500px;
+  /* margin: 0 auto 0.5rem auto; */
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: calc(2rem + 2vw);
+}
+
+.hero .left__wrapper {
+  background-color: rgba(255, 255, 255, 0.208);
+  max-width: 500px;
+  backdrop-filter: blur(5px);
+  margin: 0 2.5rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 20px rgba(133, 133, 133, 0.155);
+}
+
+.hero .left__wrapper .form__group__horizontal {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.hero .left__wrapper .form__group__horizontal div {
+  flex: 1;
+}
+
+.hero .left__wrapper .input__wrapper {
+  flex: 1;
+  min-width: 150px;
+  margin-right: 1rem;
+}
+.hero .left__wrapper .input__wrapper h6 {
+  font-weight: 300;
+}
+
+.hero .left__wrapper .input__wrapper div {
+  display: flex;
+  margin: 0.5rem 0;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.hero .left__wrapper .input__wrapper div > p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero .left__wrapper .input__wrapper div > input {
+  border: 0;
+  width: 100%;
+  outline: none;
+  font-weight: bold;
+}
+
+.hero .left__wrapper h3 {
+  margin-bottom: 1rem;
+}
+
+.hero .banner {
+  padding: 1rem;
+  border-top-right-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--main);
+  margin-top: 2rem;
+}
+
+button {
+  width: 100%;
+  border: none;
+  background-color: var(--secondary);
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: var(--main);
+  color: white;
+  font-weight: bold;
+}
+
+.hero .banner p {
+  margin: 0;
+}
+
+main {
+  width: 80%;
+  margin: 2.5rem auto;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.image__text__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 50vh;
+  margin: 2.5rem 0;
+}
+
+.image__text__wrapper img {
+  width: 40%;
+  min-width: 200px;
+}
+
+.image__text__wrapper div {
+  min-width: 300px;
+  flex: 0.7;
+}
+
+.image__text__wrapper h2 {
+  margin-bottom: 1rem;
+}
+
+.image__text__wrapper ul {
+  list-style-type: none;
+  line-height: 1.75rem;
+}
+
+.cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.card {
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  transition: 0.7s ease !important;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 30px rgba(178, 101, 0, 0.118);
+  transform: scale(1.05) !important;
+}
+
+.card img {
+  width: 20%;
+  min-width: 25px;
+}
+
+.card h3 {
+  margin: 1rem 0;
+}
+
+.card p {
+  font-size: calc(0.7rem + 0.25vw);
+  line-height: 1.5rem;
+}
+
+.conclusion {
+  margin: 2.5rem 0;
+}
+
+.conclusion h1 {
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.conclusion h1::after {
+  /* position: absolute; */
+  content: "";
+  width: 50%;
+  margin-top: 0.25rem;
+  height: 5px;
+  background-color: black;
+  margin-left: auto;
+}
+
+.conclusion p {
+  max-width: 600px;
+  line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .right__wrapper {
+    text-align: center;
+  }
+}
